@@ -1,6 +1,8 @@
 body{
     margin: 0 !important;
     font-family: 'Work Sans', sans-serif;
+    background-color: #f1f1f1;
+    color: #060607;
 }
 h1{
     font-weight: 800;
@@ -11,7 +13,7 @@ p{
     font-size: larger;
 }
 a{
-    color: black;
+    color: #060607;
 }
 /**/
 b{
@@ -52,6 +54,10 @@ section{
 }
 .photo{
     width: 30%;
+    transition: transform 1s .2s;
+}
+.photo:hover{
+    transform: scale(0.9);
 }
 @media (max-width: 612px){
     .photo{
