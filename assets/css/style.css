@@ -4,6 +4,7 @@ body{
     background-color: #f1f1f1;
     color: #060607;
 }
+/**/
 h1{
     font-weight: 800;
     font-size: xx-large;
@@ -15,11 +16,18 @@ p{
 a{
     color: #060607;
 }
-/**/
 b{
     font-weight: 600;
 }
-header, article, footer{
+/**/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+header, nav, article, footer{
     width: 75%;
 }
 footer{
@@ -32,12 +40,19 @@ hr{
     border: solid;
 }
 /**/
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+article #about{
+    opacity: 1;
 }
+article #gallery-site{
+    opacity: 0;
+}
+article #programming{
+    opacity: 0;
+}
+article #blog{
+    opacity: 0;
+}
+/**/
 .demo-icon{
     font-size: x-large;
     opacity: 0.5;
@@ -46,6 +61,7 @@ section{
 .demo-icon:hover{
     opacity: 1;
 }
+/**/
 #gallery{
     display: flex;
     flex-direction: row;
@@ -73,3 +89,4 @@ img{
     -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
 }
+/**/
