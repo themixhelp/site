@@ -27,6 +27,16 @@ section{
     align-items: center;
 }
 /**/
+nav span{
+    margin: 0 .2%;
+    border-bottom: solid rgba(0, 0, 0, .0);
+    transition: border-bottom 1s .2s;
+}
+nav span:hover{
+    cursor: pointer;
+    border-bottom: solid rgba(0, 0, 0, 1);
+}
+/**/
 header, nav, article, footer{
     width: 75%;
 }
@@ -40,17 +50,11 @@ hr{
     border: solid;
 }
 /**/
-article #about{
+#about{
     opacity: 1;
 }
-article #gallery-site{
-    opacity: 0;
-}
-article #programming{
-    opacity: 0;
-}
-article #blog{
-    opacity: 0;
+#gallery-site, #programming, #blog{
+    display: none;
 }
 /**/
 .demo-icon{
