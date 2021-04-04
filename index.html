@@ -16,78 +16,119 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600;800&display=swap" rel="stylesheet">
+
+    <script src="assets/js/script.js"></script>
 </head>
-<body>
+<body onload="fadeIn1()">
 
-    <section>
+    <section id="container">
 
-            <header>
-                <h1>themixhelp!</h1>
-            </header>
+        <header>
+            <h1>themixhelp!</h1>
+        </header>
 
-            <nav>
-                <span onclick="about()">o mnie</span>
-                <span onclick="gallerySite()">galeria</span>
-                <span onclick="programming()">programowanie</span>
-                <span onclick="blog()">blog</span>
-            </nav>
+        <nav>
+            <span onclick="about()">o mnie</span>
+            <span onclick="gallerySite()">galeria</span>
+            <span onclick="programming()">programowanie</span>
+            <span onclick="blog()">blog</span>
+        </nav>
 
-        <article>
-        <div id="about">
-            <p><b>tak to ja!</b> chcesz mnie bardziej poznać? w takim razie zapraszam do lektury :D. każda historia ma swój początek, moja oczywiście też, więc zaczniemy od początku:</p>
+        <section id="content-container">
 
-            <p><b>coś o sobie?</b> nazywam się mikołaj, w tym roku kończę 14 lat, jeśli zapytałbyś mnie o pasję to odpowiem krótko: informatyka!</p>
+            <article class="about">
+            <div id="about">
+                <p><b>tak to ja!</b> chcesz mnie bardziej poznać? w takim razie zapraszam do lektury :D. każda historia ma swój początek, moja oczywiście też, więc zaczniemy od początku:</p>
 
-            <p><b>no spoko, ale coś bardziej?</b> programowanie, głównie zajmuje <i>(czyt. staram się zajmować/kształcić)</i> się programowaniem. głównie interesuję mnie tworzenie stron internetowych, staram się tym zajmować jak najbardziej profesjonalnie.</p>
+                <p><b>coś o sobie?</b> nazywam się mikołaj, w tym roku kończę 14 lat, jeśli zapytałbyś mnie o pasję to odpowiem krótko: informatyka!</p>
 
-            <p><b>co z tego wyszło? mogę już zobaczyć jakąś stronę wykonaną przez ciebie?</b> oczywiście! wszystkie kody źródłowe swoich dokonań wstawiam i uaktualniam na swoim github'ie (patrz stopka). proste skrypty wstawiam na tą stronę, w sekcji programowanie!</p>
+                <p><b>no spoko, ale coś bardziej?</b> programowanie, głównie zajmuje <i>(czyt. staram się zajmować/kształcić)</i> się programowaniem. głównie interesuję mnie tworzenie stron internetowych, staram się tym zajmować jak najbardziej profesjonalnie.</p>
 
-            <p><b>zajmujesz się jeszcze czymś?</b> okazjonalnie robię zdjęcia, jest to coś, co również bardzo lubię robić! poniżej parę przykładowych fotografii.</p>
+                <p><b>co z tego wyszło? mogę już zobaczyć jakąś stronę wykonaną przez ciebie?</b> oczywiście! wszystkie kody źródłowe swoich dokonań wstawiam i uaktualniam na swoim github'ie (patrz stopka). proste skrypty wstawiam na tą stronę, w sekcji programowanie!</p>
 
-            <div id="gallery">
+                <p><b>zajmujesz się jeszcze czymś?</b> okazjonalnie robię zdjęcia, jest to coś, co również bardzo lubię robić! poniżej parę przykładowych fotografii.</p>
 
-                <div class="photo">
-                    <img src="assets/img/basic/image-1.jpg" alt="w krainie wiatru">
-                    <br>
-                    <span>w krainie wiatru, 27 kwietnia 2020</span>
+                <div id="gallery">
+
+                    <div class="photo">
+                        <img src="assets/img/basic/image-1.jpg" alt="w krainie wiatru">
+                        <br>
+                        <span>w krainie wiatru, 27 kwietnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/basic/image-2.jpg" alt="leniuchujący kot">
+                        <br>
+                        <span>"leniuchujący" kot, 30 kwietnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/basic/image-3.jpg" alt="w raju żyta">
+                        <span>w raju żyta, 8 sierpnia 2020</span>
+                    </div>
+
                 </div>
 
-                <div class="photo">
-                    <img src="assets/img/basic/image-2.jpg" alt="leniuchujący kot">
-                    <br>
-                    <span>"leniuchujący" kot, 30 kwietnia 2020</span>
-                </div>
-
-                <div class="photo">
-                    <img src="assets/img/basic/image-3.jpg" alt="w raju żyta">
-                    <span>w raju żyta, 8 sierpnia 2020</span>
-                </div>
-
+                <p><b>spodobały ci się moje zdjęcia?</b> wszystkie najlepsze zamieszczam na swoim instagramie, więc tam cię serdecznie odsyłam, możesz sprawdzić również sekcję galeria na tej stronie!</p>
+                
+                <p><b>kontakt?</b> wszystkie moje social-media zamieszczone są na końcu tej strony, jeśli masz już jednak zamiar do mnie pisać bardzo prosiłbym o kontakt mail'owy!</p>
             </div>
+            </article>
 
-            <p><b>spodobały ci się moje zdjęcia?</b> wszystkie najlepsze zamieszczam na swoim instagramie, więc tam cię serdecznie odsyłam, możesz sprawdzić również sekcję galeria na tej stronie!</p>
-            
-            <p><b>kontakt?</b> wszystkie moje social-media zamieszczone są na końcu tej strony, jeśli masz już jednak zamiar do mnie pisać bardzo prosiłbym o kontakt mail'owy!</p>
-        </div>
-        </article>
+            <article>
+            <div id="programming">
+                <p>jeste hakerem - <b>programowanie</b> ;)</p>
+            </div>
+            </article>
 
-        <article>
-        <div id="programming">
-            f
-        </div>
-        </article>
+            <article>
+            <div id="gallerySite">
+                <p>więcej moich artystycznych dokonań - <b>galeria</b>!</p>
+                <div id="gallery-site-in">
 
-        <article>
-        <div id="gallery-site">
-            d
-        </div>
-        </article>
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="w krainie wiatru">
+                        <br>
+                        <span>w krainie wiatru, 27 kwietnia 2020</span>
+                    </div>
 
-        <article>
-        <div id="blog">
-            s
-        </div>
-        </article>
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="leniuchujący kot">
+                        <br>
+                        <span>"leniuchujący" kot, 30 kwietnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="w raju żyta">
+                        <span>w raju żyta, 8 sierpnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="w raju żyta">
+                        <span>w raju żyta, 8 sierpnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="w raju żyta">
+                        <span>w raju żyta, 8 sierpnia 2020</span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/gallery/" alt="w raju żyta">
+                        <span>w raju żyta, 8 sierpnia 2020</span>
+                    </div>
+
+                </div>
+            </div>
+            </article>
+
+            <article>
+            <div id="blog">
+                <p>jak żyje, co robię, co robiłem? - <b>blog</b>!</p>
+            </div>
+            </article>
+
+        </section>
 
         <hr>
 

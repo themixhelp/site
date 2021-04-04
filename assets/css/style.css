@@ -20,6 +20,9 @@ b{
     font-weight: 600;
 }
 /**/
+#container{
+    opacity: 0;
+}
 section{
     display: flex;
     flex-direction: column;
@@ -30,7 +33,7 @@ section{
 nav span{
     margin: 0 .2%;
     border-bottom: solid rgba(0, 0, 0, .0);
-    transition: border-bottom 1s .2s;
+    transition: border-bottom 1s;
 }
 nav span:hover{
     cursor: pointer;
@@ -53,7 +56,7 @@ hr{
 #about{
     opacity: 1;
 }
-#gallery-site, #programming, #blog{
+#gallerySite, #programming, #blog{
     display: none;
 }
 /**/
@@ -72,8 +75,15 @@ hr{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#gallery-site-in{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
 .photo{
     width: 30%;
+    margin-bottom: 1%;
     transition: transform 1s .2s;
 }
 .photo:hover{
