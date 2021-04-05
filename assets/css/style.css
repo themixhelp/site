@@ -66,6 +66,7 @@ footer{
 hr{
     width: 50%;
     border: solid;
+    margin: 1% 0;
 }
 /**/
 #about{
@@ -108,9 +109,11 @@ hr{
 .photo{
     width: 30%;
     margin-bottom: 1%;
-    transition: transform 1s .2s;
+    opacity: 0.9;
+    transition: transform 1s .2s, opacity 1s .2s;
 }
 .photo:hover{
+    opacity: 1;
     transform: scale(0.9);
 }
 @media (max-width: 612px){
@@ -128,3 +131,6 @@ img{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
 }
 /**/
+#footer-span{
+    display: block;
+}
