@@ -83,14 +83,6 @@
             </div>
             </article>
 
-            <!--programming article-->
-
-            <article>
-            <div id="programming">
-                <p>jeste hakerem - <b>programowanie</b> ;)</p>
-            </div>
-            </article>
-
             <!--gallery article-->
 
             <article>
@@ -149,23 +141,51 @@
             </div>
             </article>
 
+            <!--programming article-->
+
+            <article>
+                <div id="programming">
+                    <p>jeste hakerem - <b>programowanie</b> ;)</p>
+
+                    <p>poniższy kod pozwala na wylosowanie dowolnej frazy, z bazy wprowadzonej do programu! został napisany w języku python. dodatkowo można wybrać ile wyrazów zostanie uwzględnione w wyniku. skrypt można zobaczyć/pobrać na github'ie pod <a href="https://github.com/themixhelp/site/assets/docs/codes/random-pharse.py" target="_blank">tym</a> linkiem.</p>
+
+                    <pre>
+from random import randint
+
+def losuj():
+    score = randint(0, len(phrase))
+    end = phrase[score - 1]
+    str(end)
+    print('Wylosowana fraza to: ' + end)
+                        
+inp = str(input('Podaj frazy [oddziel srednikami, bez spacji]: '))
+inp2 = int(input('Ile fraz chcesz wylosowac?: '))
+                        
+phrase = inp.split(";")
+                        
+for i in range(0, inp2):
+    losuj()</pre>
+
+                </div>
+            </article>
+
             <!--blog article-->
 
             <article>
+                
             <div id="blog">
                 <p>jak żyje, co robię, co robiłem? - <b>blog</b>!</p>
+
+                <br>
 
                 <div class="blog-box">
                     <h2>05.04.2021 | powitanie!</h2>
 
                     <p>cześć wszystkim! mam nadzieje, że będziecie chcieli zostać ze mną na dłużej! jeśli macie jakieś pomysły dotyczące rozwoju tej strony, piszcie na mojego mail'a: <a href="mailto:themixhelp@outlook.com"><b>themixhelp@outlook.com</b></a>.</p>
 
-                    <p>nie bójcie się przy tym, że ja nie mam pomysłów, ponieważ mam i to bardzo dużo ;)</p>
-
                 </div>
 
-                <br>
-
+                <!--
                 <div class="blog-box">
                     <h2>05.04.2021 | wpis techniczny</h2>
 
@@ -182,7 +202,7 @@
                     <img src="https://picsum.photos/1200/900" alt="przykładowe foto" class="blog-img">
 
                 </div>
-
+                -->
 
             </div>
             </article>
