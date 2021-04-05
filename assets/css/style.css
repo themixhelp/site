@@ -9,6 +9,10 @@ h1{
     font-weight: 800;
     font-size: xx-large;
 }
+h2{
+    font-weight: 600;
+    font-size: x-large;
+}
 p{
     font-weight: 300;
     font-size: larger;
@@ -16,12 +20,21 @@ p{
 a{
     color: #060607;
 }
+span{
+    font-weight: 300;
+}
+.bold{
+    font-weight: 400; 
+}
 b{
     font-weight: 600;
 }
 /**/
 #container{
     opacity: 0;
+}
+#content-container{
+    width: 100%;
 }
 section{
     display: flex;
@@ -34,6 +47,8 @@ nav span{
     margin: 0 .2%;
     border-bottom: solid rgba(0, 0, 0, .0);
     transition: border-bottom 1s;
+    font-size: medium;
+    font-weight: 300;
 }
 nav span:hover{
     cursor: pointer;
@@ -58,6 +73,15 @@ hr{
 }
 #gallerySite, #programming, #blog{
     display: none;
+}
+/**/
+.blog-box{
+    border: solid;
+    padding: 2%;
+    margin-bottom: 1%;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.35);
 }
 /**/
 .demo-icon{
