@@ -101,6 +101,7 @@ ul, ol{
 }
 /**/
 pre{
+    overflow: auto;
     background-color: #ececec;
     border: solid;
     padding: 2%;
