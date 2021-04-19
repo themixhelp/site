@@ -120,6 +120,7 @@ ul, ol{
 }
 /**/
 pre{
+    font-family: 'Ubuntu Mono', monospace;
     overflow: auto;
     background-color: #ececec;
     border: solid;
