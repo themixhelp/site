@@ -44,15 +44,34 @@ section{
 }
 /**/
 nav span{
+    overflow: hidden;
+    display: inline-block;
     margin: 0 .2%;
-    border-bottom: solid rgba(0, 0, 0, .0);
-    transition: border-bottom 1s;
+    padding: .5% 0;
+    position: relative;
     font-size: medium;
     font-weight: 300;
+    z-index: 1;
+    transition: color .5s .2s linear;
+}
+nav span::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background-color: #060607;
+    transition: transform .5s .2s ease-in-out;
+    z-index: -1;
 }
 nav span:hover{
     cursor: pointer;
-    border-bottom: solid rgba(0, 0, 0, 1);
+    color: #f1f1f1;
+}
+nav span:hover::before{
+    transform: translateX(-100%);
 }
 /**/
 header, nav, article, footer{
